@@ -9,13 +9,14 @@ import { pick } from '../../helpers/systemProps';
 import { Box } from '../Box';
 
 import Group from './Group';
-import { base, visualSize, colorVariant, disabled, fullWidth } from './styles';
+import { base, focus, visualSize, colorVariant, disabled, fullWidth } from './styles';
 
 // TODO Categorize system props and abstract
 const system = compose(margin, width, padding);
 
 export const StyledButton = styled(Box)`
   ${base}
+  ${focus}
   ${visualSize}
   ${colorVariant}
   ${disabled}
